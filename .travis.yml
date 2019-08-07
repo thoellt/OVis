@@ -1,0 +1,13 @@
+language: objective-c
+osx_image: xcode10.2
+before_script:
+# - xcrun instruments -s devices
+- "./scripts/add-key.sh"
+script:
+- xcodebuild -project OVis.xcodeproj -target Ovis -sdk macosx10.14 | xcpretty
+after_script:
+- "./scripts/remove-key.sh"
+addons:
+  homebrew:
+    packages:
+    - netcdf

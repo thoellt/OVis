@@ -1,0 +1,1312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB01C43817F34D290015EFE8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB01C43717F34D290015EFE8 /* QuartzCore.framework */; };
+		AB0B6DFE17A910E100F9DCFB /* OVGLContextManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB0B6DFD17A910E100F9DCFB /* OVGLContextManager.mm */; };
+		AB0D2AF41774D26D0009F5A5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D2AF31774D26D0009F5A5 /* CoreLocation.framework */; };
+		AB0E2A66180D58CF009CDE12 /* OVHistogramController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB0E2A63180D58CF009CDE12 /* OVHistogramController.mm */; };
+		AB0E2A6C180D776D009CDE12 /* NetCDFLoaderSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0E2A6A180D776D009CDE12 /* NetCDFLoaderSheet.xib */; };
+		AB1D92E2177214F700758035 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1D92E1177214F700758035 /* CoreGraphics.framework */; };
+		AB212D0E181D139C00D4A398 /* OVNetCDFLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB212D0D181D139C00D4A398 /* OVNetCDFLoader.mm */; };
+		AB33B4F922F328010053F550 /* libnetcdf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB33B4F822F328010053F550 /* libnetcdf.a */; };
+		AB33B54122F32B6E0053F550 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB33B53222F32B4A0053F550 /* CorePlot.framework */; };
+		AB33B54222F32BF80053F550 /* CorePlot.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB33B53222F32B4A0053F550 /* CorePlot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB3BBF6417F9E432000E9E4E /* glslProgramUnstructuredSurfaceRenderer.gsh in Resources */ = {isa = PBXBuildFile; fileRef = AB3BBF6117F9E1BF000E9E4E /* glslProgramUnstructuredSurfaceRenderer.gsh */; };
+		AB3C4128176C9B2000EAFB3E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AB3C4126176C9B2000EAFB3E /* Credits.rtf */; };
+		AB3C4130176C9B2000EAFB3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3C412F176C9B2000EAFB3E /* Images.xcassets */; };
+		AB3C4137176C9B2000EAFB3E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3C4136176C9B2000EAFB3E /* XCTest.framework */; };
+		AB3C4138176C9B2000EAFB3E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3C4117176C9B2000EAFB3E /* Cocoa.framework */; };
+		AB3C4140176C9B2000EAFB3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB3C413E176C9B2000EAFB3E /* InfoPlist.strings */; };
+		AB3C4142176C9B2000EAFB3E /* OVisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3C4141176C9B2000EAFB3E /* OVisTests.m */; };
+		AB49BC2A17B2741500592254 /* OVEnsembleData+Pathlines.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB49BC2917B2741500592254 /* OVEnsembleData+Pathlines.mm */; };
+		AB57767617A2876900E73929 /* glslProgramBasicGL.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB57767017A2875900E73929 /* glslProgramBasicGL.fsh */; };
+		AB57767717A2876900E73929 /* glslProgramRegularSurfaceRenderer.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB57767117A2875900E73929 /* glslProgramRegularSurfaceRenderer.fsh */; };
+		AB57767817A2876900E73929 /* glslProgramUnstructuredSurfaceRenderer.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB57767217A2875900E73929 /* glslProgramUnstructuredSurfaceRenderer.fsh */; };
+		AB57767917A2876900E73929 /* glslProgramBasicGL.vsh in Resources */ = {isa = PBXBuildFile; fileRef = AB57767317A2875900E73929 /* glslProgramBasicGL.vsh */; };
+		AB57767A17A2876900E73929 /* glslProgramRegularSurfaceRenderer.vsh in Resources */ = {isa = PBXBuildFile; fileRef = AB57767417A2875900E73929 /* glslProgramRegularSurfaceRenderer.vsh */; };
+		AB57767B17A2876900E73929 /* glslProgramUnstructuredSurfaceRenderer.vsh in Resources */ = {isa = PBXBuildFile; fileRef = AB57767517A2875900E73929 /* glslProgramUnstructuredSurfaceRenderer.vsh */; };
+		AB57768317A2879300E73929 /* SMDoubleSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = AB57768117A2879300E73929 /* SMDoubleSlider.m */; };
+		AB57768417A2879300E73929 /* SMDoubleSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB57768217A2879300E73929 /* SMDoubleSliderCell.m */; };
+		AB5776A517A287A900E73929 /* OVAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB57769817A287A900E73929 /* OVAppDelegate.mm */; };
+		AB5776AF17A287C100E73929 /* OVGLSLProgram.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776AE17A287C100E73929 /* OVGLSLProgram.mm */; };
+		AB5776B417A287EE00E73929 /* OVColormap.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776B117A287EE00E73929 /* OVColormap.mm */; };
+		AB5776B517A287EE00E73929 /* OVViewSettings.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776B317A287EE00E73929 /* OVViewSettings.mm */; };
+		AB5776C017A2880000E73929 /* OVEnsembleData.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776B717A2880000E73929 /* OVEnsembleData.mm */; };
+		AB5776C117A2880000E73929 /* OVEnsembleData+Loader.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776B917A2880000E73929 /* OVEnsembleData+Loader.mm */; };
+		AB5776C217A2880000E73929 /* OVEnsembleData+Platforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776BB17A2880000E73929 /* OVEnsembleData+Platforms.mm */; };
+		AB5776C317A2880000E73929 /* OVEnsembleData+Statistics.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776BD17A2880000E73929 /* OVEnsembleData+Statistics.mm */; };
+		AB5776C417A2880000E73929 /* OVOffShorePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5776BF17A2880000E73929 /* OVOffShorePlatform.m */; };
+		AB5776CB17A2881100E73929 /* OVTimeSeriesRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776C617A2881100E73929 /* OVTimeSeriesRenderer.mm */; };
+		AB5776CC17A2881100E73929 /* OVTimeSeriesRenderer+Buffers.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776C817A2881100E73929 /* OVTimeSeriesRenderer+Buffers.mm */; };
+		AB5776CD17A2881100E73929 /* OVTimeSeriesRenderer+Shaders.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776CA17A2881100E73929 /* OVTimeSeriesRenderer+Shaders.mm */; };
+		AB5776D417A2882200E73929 /* OVUnstructuredSurfaceRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776CF17A2882200E73929 /* OVUnstructuredSurfaceRenderer.mm */; };
+		AB5776D517A2882200E73929 /* OVUnstructuredSurfaceRenderer+Buffers.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776D117A2882200E73929 /* OVUnstructuredSurfaceRenderer+Buffers.mm */; };
+		AB5776D617A2882200E73929 /* OVUnstructuredSurfaceRenderer+Shaders.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776D317A2882200E73929 /* OVUnstructuredSurfaceRenderer+Shaders.mm */; };
+		AB5776DD17A2883100E73929 /* OVRegularSurfaceRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776D817A2883100E73929 /* OVRegularSurfaceRenderer.mm */; };
+		AB5776DE17A2883100E73929 /* OVRegularSurfaceRenderer+Buffers.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776DA17A2883100E73929 /* OVRegularSurfaceRenderer+Buffers.mm */; };
+		AB5776DF17A2883100E73929 /* OVRegularSurfaceRenderer+Shaders.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776DC17A2883100E73929 /* OVRegularSurfaceRenderer+Shaders.mm */; };
+		AB5776E217A2883900E73929 /* OVSurfaceRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776E117A2883900E73929 /* OVSurfaceRenderer.mm */; };
+		AB5776FB17A2885300E73929 /* OV2DView.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776E417A2885300E73929 /* OV2DView.mm */; };
+		AB5776FD17A2885300E73929 /* OV3DView.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776E817A2885300E73929 /* OV3DView.mm */; };
+		AB5776FF17A2885300E73929 /* OVGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776EC17A2885300E73929 /* OVGLView.mm */; };
+		AB57770017A2885300E73929 /* OVMapOverlay.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776EE17A2885300E73929 /* OVMapOverlay.mm */; };
+		AB57770117A2885300E73929 /* OVMapOverlayRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776F017A2885300E73929 /* OVMapOverlayRenderer.mm */; };
+		AB57770217A2885300E73929 /* OVPlatformAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5776F217A2885300E73929 /* OVPlatformAnnotation.m */; };
+		AB57770317A2885300E73929 /* OVPropertiesView.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776F417A2885300E73929 /* OVPropertiesView.mm */; };
+		AB57770517A2885300E73929 /* OVTimeSeriesView.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5776F817A2885300E73929 /* OVTimeSeriesView.mm */; };
+		AB57770917A288D800E73929 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB57770817A288D800E73929 /* main.m */; };
+		AB684F91195979DE00F93DE5 /* OVPathlineRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB684F8C195979DE00F93DE5 /* OVPathlineRenderer.mm */; };
+		AB684F92195979DE00F93DE5 /* OVPathlineRenderer+Buffers.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB684F8E195979DE00F93DE5 /* OVPathlineRenderer+Buffers.mm */; };
+		AB684F93195979DE00F93DE5 /* OVPathlineRenderer+Shaders.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB684F90195979DE00F93DE5 /* OVPathlineRenderer+Shaders.mm */; };
+		AB684F9619597F6000F93DE5 /* glslProgramPathlineRenderer.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB684F9419597F6000F93DE5 /* glslProgramPathlineRenderer.fsh */; };
+		AB684F9719597F6000F93DE5 /* glslProgramPathlineRenderer.vsh in Resources */ = {isa = PBXBuildFile; fileRef = AB684F9519597F6000F93DE5 /* glslProgramPathlineRenderer.vsh */; };
+		AB71B8FD17719BA500AEBF59 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB71B8FC17719BA500AEBF59 /* GLKit.framework */; };
+		AB73120E180D305400C3CBD0 /* OVNCLoaderController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB73120D180D305400C3CBD0 /* OVNCLoaderController.mm */; };
+		AB7B7C1618D0643A00F25829 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7B7C1518D0643A00F25829 /* MapKit.framework */; };
+		AB91A18E19C63FB2007BFB7A /* OVVariable2D.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB91A18D19C63FB2007BFB7A /* OVVariable2D.mm */; };
+		AB91A19419C63FCD007BFB7A /* OVStatistic.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB91A19319C63FCD007BFB7A /* OVStatistic.mm */; };
+		AB91A1B119C73D14007BFB7A /* OVHistogram.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB91A1B019C73D14007BFB7A /* OVHistogram.mm */; };
+		AB96E59618B63EE700DEB781 /* OVSurfaceRenderer+Shaders.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB96E59518B63EE700DEB781 /* OVSurfaceRenderer+Shaders.mm */; };
+		AB96E59B18B6426600DEB781 /* OVSurfaceRenderer+Buffers.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB96E59A18B6426600DEB781 /* OVSurfaceRenderer+Buffers.mm */; };
+		AB9E2FFF182122850082600B /* OVRawFilePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E2FFE182122850082600B /* OVRawFilePresenter.m */; };
+		ABA054C918C626CC003651C1 /* Ovis.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = ABA054C818C626CC003651C1 /* Ovis.entitlements */; };
+		ABA22D6D180FEAD8007236A7 /* OVPropertiesViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABA22D6C180FEAD8007236A7 /* OVPropertiesViewController.mm */; };
+		ABA22D75180FEC69007236A7 /* PropertiesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA22D73180FEC69007236A7 /* PropertiesView.xib */; };
+		ABA22D78180FF8BD007236A7 /* OV3DViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABA22D77180FF8BD007236A7 /* OV3DViewController.mm */; };
+		ABB265E918BA2DC0001E0DC7 /* glslProgramBasicGLColorBuffer.fsh in Resources */ = {isa = PBXBuildFile; fileRef = ABB265E518BA2DA0001E0DC7 /* glslProgramBasicGLColorBuffer.fsh */; };
+		ABB265EA18BA2DC0001E0DC7 /* glslProgramBasicGLColorBuffer.vsh in Resources */ = {isa = PBXBuildFile; fileRef = ABB265E618BA2DA0001E0DC7 /* glslProgramBasicGLColorBuffer.vsh */; };
+		ABC0A8B517F4ABFD00E98251 /* wire.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC0A8B217F4ABC400E98251 /* wire.png */; };
+		ABC7B1BE1963230B004501C5 /* glslProgramPathlineRendererFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = ABC7B1BC1963230B004501C5 /* glslProgramPathlineRendererFilter.fsh */; };
+		ABC7B1BF1963230B004501C5 /* glslProgramPathlineRendererFilter.vsh in Resources */ = {isa = PBXBuildFile; fileRef = ABC7B1BD1963230B004501C5 /* glslProgramPathlineRendererFilter.vsh */; };
+		ABD75A2C17A2856D002E2E39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3C412C176C9B2000EAFB3E /* MainMenu.xib */; };
+		ABDD306518B2564E00A58B73 /* 2DView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABDD306318B2564E00A58B73 /* 2DView.xib */; };
+		ABDD306818B2565B00A58B73 /* HistogramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABDD306618B2565B00A58B73 /* HistogramView.xib */; };
+		ABDD307018B2585800A58B73 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABDD306E18B2585800A58B73 /* PreferencesWindow.xib */; };
+		ABDD307318B263D900A58B73 /* OVPreferencesWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDD307218B263D900A58B73 /* OVPreferencesWindowController.mm */; };
+		ABE3D31919C8808F006420E9 /* OVVariable.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABE3D31819C8808F006420E9 /* OVVariable.mm */; };
+		ABE3D31F19C885F2006420E9 /* OVVariable1D.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABE3D31E19C885F2006420E9 /* OVVariable1D.mm */; };
+		ABEDE80E19E80714008B4D02 /* OVTimeSeriesContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEDE80D19E80714008B4D02 /* OVTimeSeriesContainerView.m */; };
+		ABEE488F18100730001848D9 /* 3DView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABEE488D18100730001848D9 /* 3DView.xib */; };
+		ABEE489418100EA8001848D9 /* OV2DViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABEE489318100EA8001848D9 /* OV2DViewController.mm */; };
+		ABEE4897181014BA001848D9 /* OVHistogramViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABEE4896181014BA001848D9 /* OVHistogramViewController.mm */; };
+		ABEE489C181018E0001848D9 /* TimeSeriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABEE489A181018E0001848D9 /* TimeSeriesView.xib */; };
+		ABEE489F18101919001848D9 /* OVTimeSeriesViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABEE489E18101919001848D9 /* OVTimeSeriesViewController.mm */; };
+		ABEE48A218103EF7001848D9 /* OVMainWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABEE48A118103EF7001848D9 /* OVMainWindow.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB33B53122F32B4A0053F550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = "CorePlot Mac";
+		};
+		AB33B53322F32B4A0053F550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0730F600109492D800E95162;
+			remoteInfo = "UnitTests Mac";
+		};
+		AB33B53522F32B4A0053F550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09781A46185200D45436;
+			remoteInfo = "CorePlot iOS";
+		};
+		AB33B53722F32B4A0053F550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09821A46185300D45436;
+			remoteInfo = "UnitTests iOS";
+		};
+		AB33B53922F32B4A0053F550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09BA1A4619A900D45436;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		AB33B53B22F32B4A0053F550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09C41A4619A900D45436;
+			remoteInfo = "CorePlot-CocoaTouchTests";
+		};
+		AB33B53D22F32B4A0053F550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C37EA6921BC83F2A0091C8F7;
+			remoteInfo = "CorePlot tvOS";
+		};
+		AB33B53F22F32B4A0053F550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C37EA6B71BC83F2D0091C8F7;
+			remoteInfo = "UnitTests tvOS";
+		};
+		AB33B54322F32D8F0053F550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = "CorePlot Mac";
+		};
+		AB3C4139176C9B2000EAFB3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB3C410C176C9B2000EAFB3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB3C4113176C9B2000EAFB3E;
+			remoteInfo = OVis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB6226B417FC9BDA0001B224 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB33B54222F32BF80053F550 /* CorePlot.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB01C43717F34D290015EFE8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AB0B6DFC17A910E100F9DCFB /* OVGLContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVGLContextManager.h; path = Code/Core/OVGLContextManager.h; sourceTree = "<group>"; };
+		AB0B6DFD17A910E100F9DCFB /* OVGLContextManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVGLContextManager.mm; path = Code/Core/OVGLContextManager.mm; sourceTree = "<group>"; };
+		AB0D2AF31774D26D0009F5A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AB0E2A62180D58CF009CDE12 /* OVHistogramController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVHistogramController.h; path = Code/GUI/OVHistogramController.h; sourceTree = "<group>"; };
+		AB0E2A63180D58CF009CDE12 /* OVHistogramController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVHistogramController.mm; path = Code/GUI/OVHistogramController.mm; sourceTree = "<group>"; };
+		AB0E2A6B180D776D009CDE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NetCDFLoaderSheet.xib; sourceTree = "<group>"; };
+		AB1D92E1177214F700758035 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB212D0C181D139C00D4A398 /* OVNetCDFLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVNetCDFLoader.h; path = Code/Core/OVNetCDFLoader.h; sourceTree = "<group>"; };
+		AB212D0D181D139C00D4A398 /* OVNetCDFLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVNetCDFLoader.mm; path = Code/Core/OVNetCDFLoader.mm; sourceTree = "<group>"; };
+		AB33B4F822F328010053F550 /* libnetcdf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnetcdf.a; path = ../../../../../usr/local/Cellar/netcdf/4.6.3_1/lib/libnetcdf.a; sourceTree = "<group>"; };
+		AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = "External/core-plot/framework/CorePlot.xcodeproj"; sourceTree = "<group>"; };
+		AB3BBF6117F9E1BF000E9E4E /* glslProgramUnstructuredSurfaceRenderer.gsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = glslProgramUnstructuredSurfaceRenderer.gsh; path = Code/Shaders/glslProgramUnstructuredSurfaceRenderer.gsh; sourceTree = "<group>"; };
+		AB3C4114176C9B2000EAFB3E /* Ovis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ovis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3C4117176C9B2000EAFB3E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AB3C411A176C9B2000EAFB3E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AB3C411B176C9B2000EAFB3E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AB3C411C176C9B2000EAFB3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB3C4121176C9B2000EAFB3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB3C4127176C9B2000EAFB3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AB3C412D176C9B2000EAFB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AB3C412F176C9B2000EAFB3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB3C4135176C9B2000EAFB3E /* Ovis.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ovis.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3C4136176C9B2000EAFB3E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AB3C413D176C9B2000EAFB3E /* OvisTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OvisTests-Info.plist"; sourceTree = "<group>"; };
+		AB3C413F176C9B2000EAFB3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB3C4141176C9B2000EAFB3E /* OVisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OVisTests.m; sourceTree = "<group>"; };
+		AB49BC2817B2741500592254 /* OVEnsembleData+Pathlines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVEnsembleData+Pathlines.h"; path = "Code/Core/OVEnsembleData+Pathlines.h"; sourceTree = "<group>"; };
+		AB49BC2917B2741500592254 /* OVEnsembleData+Pathlines.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVEnsembleData+Pathlines.mm"; path = "Code/Core/OVEnsembleData+Pathlines.mm"; sourceTree = "<group>"; };
+		AB57767017A2875900E73929 /* glslProgramBasicGL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = glslProgramBasicGL.fsh; path = Code/Shaders/glslProgramBasicGL.fsh; sourceTree = "<group>"; };
+		AB57767117A2875900E73929 /* glslProgramRegularSurfaceRenderer.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = glslProgramRegularSurfaceRenderer.fsh; path = Code/Shaders/glslProgramRegularSurfaceRenderer.fsh; sourceTree = "<group>"; };
+		AB57767217A2875900E73929 /* glslProgramUnstructuredSurfaceRenderer.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = glslProgramUnstructuredSurfaceRenderer.fsh; path = Code/Shaders/glslProgramUnstructuredSurfaceRenderer.fsh; sourceTree = "<group>"; };
+		AB57767317A2875900E73929 /* glslProgramBasicGL.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = glslProgramBasicGL.vsh; path = Code/Shaders/glslProgramBasicGL.vsh; sourceTree = "<group>"; };
+		AB57767417A2875900E73929 /* glslProgramRegularSurfaceRenderer.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = glslProgramRegularSurfaceRenderer.vsh; path = Code/Shaders/glslProgramRegularSurfaceRenderer.vsh; sourceTree = "<group>"; };
+		AB57767517A2875900E73929 /* glslProgramUnstructuredSurfaceRenderer.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = glslProgramUnstructuredSurfaceRenderer.vsh; path = Code/Shaders/glslProgramUnstructuredSurfaceRenderer.vsh; sourceTree = "<group>"; };
+		AB57767C17A2879300E73929 /* general.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = general.h; path = Code/Support/general.h; sourceTree = "<group>"; };
+		AB57767D17A2879300E73929 /* gl_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gl_error.h; path = Code/Support/gl_error.h; sourceTree = "<group>"; };
+		AB57767E17A2879300E73929 /* gl_general.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gl_general.h; path = Code/Support/gl_general.h; sourceTree = "<group>"; };
+		AB57767F17A2879300E73929 /* SMDoubleSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMDoubleSlider.h; path = Code/Support/SMDoubleSlider.h; sourceTree = "<group>"; };
+		AB57768017A2879300E73929 /* SMDoubleSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMDoubleSliderCell.h; path = Code/Support/SMDoubleSliderCell.h; sourceTree = "<group>"; };
+		AB57768117A2879300E73929 /* SMDoubleSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMDoubleSlider.m; path = Code/Support/SMDoubleSlider.m; sourceTree = "<group>"; };
+		AB57768217A2879300E73929 /* SMDoubleSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMDoubleSliderCell.m; path = Code/Support/SMDoubleSliderCell.m; sourceTree = "<group>"; };
+		AB57768917A287A900E73929 /* OVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVAppDelegate.h; path = Code/GUI/OVAppDelegate.h; sourceTree = "<group>"; };
+		AB57768A17A287A900E73929 /* OVAppDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVAppDelegateProtocol.h; path = Code/GUI/OVAppDelegateProtocol.h; sourceTree = "<group>"; };
+		AB57769817A287A900E73929 /* OVAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVAppDelegate.mm; path = Code/GUI/OVAppDelegate.mm; sourceTree = "<group>"; };
+		AB5776AD17A287C100E73929 /* OVGLSLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVGLSLProgram.h; path = Code/Core/OVGLSLProgram.h; sourceTree = "<group>"; };
+		AB5776AE17A287C100E73929 /* OVGLSLProgram.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVGLSLProgram.mm; path = Code/Core/OVGLSLProgram.mm; sourceTree = "<group>"; };
+		AB5776B017A287EE00E73929 /* OVColormap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVColormap.h; path = Code/Core/OVColormap.h; sourceTree = "<group>"; };
+		AB5776B117A287EE00E73929 /* OVColormap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVColormap.mm; path = Code/Core/OVColormap.mm; sourceTree = "<group>"; };
+		AB5776B217A287EE00E73929 /* OVViewSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVViewSettings.h; path = Code/Core/OVViewSettings.h; sourceTree = "<group>"; };
+		AB5776B317A287EE00E73929 /* OVViewSettings.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVViewSettings.mm; path = Code/Core/OVViewSettings.mm; sourceTree = "<group>"; };
+		AB5776B617A2880000E73929 /* OVEnsembleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVEnsembleData.h; path = Code/Core/OVEnsembleData.h; sourceTree = "<group>"; };
+		AB5776B717A2880000E73929 /* OVEnsembleData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVEnsembleData.mm; path = Code/Core/OVEnsembleData.mm; sourceTree = "<group>"; };
+		AB5776B817A2880000E73929 /* OVEnsembleData+Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVEnsembleData+Loader.h"; path = "Code/Core/OVEnsembleData+Loader.h"; sourceTree = "<group>"; };
+		AB5776B917A2880000E73929 /* OVEnsembleData+Loader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVEnsembleData+Loader.mm"; path = "Code/Core/OVEnsembleData+Loader.mm"; sourceTree = "<group>"; };
+		AB5776BA17A2880000E73929 /* OVEnsembleData+Platforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVEnsembleData+Platforms.h"; path = "Code/Core/OVEnsembleData+Platforms.h"; sourceTree = "<group>"; };
+		AB5776BB17A2880000E73929 /* OVEnsembleData+Platforms.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVEnsembleData+Platforms.mm"; path = "Code/Core/OVEnsembleData+Platforms.mm"; sourceTree = "<group>"; };
+		AB5776BC17A2880000E73929 /* OVEnsembleData+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVEnsembleData+Statistics.h"; path = "Code/Core/OVEnsembleData+Statistics.h"; sourceTree = "<group>"; };
+		AB5776BD17A2880000E73929 /* OVEnsembleData+Statistics.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVEnsembleData+Statistics.mm"; path = "Code/Core/OVEnsembleData+Statistics.mm"; sourceTree = "<group>"; };
+		AB5776BE17A2880000E73929 /* OVOffShorePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVOffShorePlatform.h; path = Code/Core/OVOffShorePlatform.h; sourceTree = "<group>"; };
+		AB5776BF17A2880000E73929 /* OVOffShorePlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OVOffShorePlatform.m; path = Code/Core/OVOffShorePlatform.m; sourceTree = "<group>"; };
+		AB5776C517A2881100E73929 /* OVTimeSeriesRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVTimeSeriesRenderer.h; path = Code/Core/OVTimeSeriesRenderer.h; sourceTree = "<group>"; };
+		AB5776C617A2881100E73929 /* OVTimeSeriesRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVTimeSeriesRenderer.mm; path = Code/Core/OVTimeSeriesRenderer.mm; sourceTree = "<group>"; };
+		AB5776C717A2881100E73929 /* OVTimeSeriesRenderer+Buffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVTimeSeriesRenderer+Buffers.h"; path = "Code/Core/OVTimeSeriesRenderer+Buffers.h"; sourceTree = "<group>"; };
+		AB5776C817A2881100E73929 /* OVTimeSeriesRenderer+Buffers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVTimeSeriesRenderer+Buffers.mm"; path = "Code/Core/OVTimeSeriesRenderer+Buffers.mm"; sourceTree = "<group>"; };
+		AB5776C917A2881100E73929 /* OVTimeSeriesRenderer+Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVTimeSeriesRenderer+Shaders.h"; path = "Code/Core/OVTimeSeriesRenderer+Shaders.h"; sourceTree = "<group>"; };
+		AB5776CA17A2881100E73929 /* OVTimeSeriesRenderer+Shaders.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVTimeSeriesRenderer+Shaders.mm"; path = "Code/Core/OVTimeSeriesRenderer+Shaders.mm"; sourceTree = "<group>"; };
+		AB5776CE17A2882200E73929 /* OVUnstructuredSurfaceRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVUnstructuredSurfaceRenderer.h; path = Code/Core/OVUnstructuredSurfaceRenderer.h; sourceTree = "<group>"; };
+		AB5776CF17A2882200E73929 /* OVUnstructuredSurfaceRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVUnstructuredSurfaceRenderer.mm; path = Code/Core/OVUnstructuredSurfaceRenderer.mm; sourceTree = "<group>"; };
+		AB5776D017A2882200E73929 /* OVUnstructuredSurfaceRenderer+Buffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVUnstructuredSurfaceRenderer+Buffers.h"; path = "Code/Core/OVUnstructuredSurfaceRenderer+Buffers.h"; sourceTree = "<group>"; };
+		AB5776D117A2882200E73929 /* OVUnstructuredSurfaceRenderer+Buffers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVUnstructuredSurfaceRenderer+Buffers.mm"; path = "Code/Core/OVUnstructuredSurfaceRenderer+Buffers.mm"; sourceTree = "<group>"; };
+		AB5776D217A2882200E73929 /* OVUnstructuredSurfaceRenderer+Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVUnstructuredSurfaceRenderer+Shaders.h"; path = "Code/Core/OVUnstructuredSurfaceRenderer+Shaders.h"; sourceTree = "<group>"; };
+		AB5776D317A2882200E73929 /* OVUnstructuredSurfaceRenderer+Shaders.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVUnstructuredSurfaceRenderer+Shaders.mm"; path = "Code/Core/OVUnstructuredSurfaceRenderer+Shaders.mm"; sourceTree = "<group>"; };
+		AB5776D717A2883100E73929 /* OVRegularSurfaceRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVRegularSurfaceRenderer.h; path = Code/Core/OVRegularSurfaceRenderer.h; sourceTree = "<group>"; };
+		AB5776D817A2883100E73929 /* OVRegularSurfaceRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVRegularSurfaceRenderer.mm; path = Code/Core/OVRegularSurfaceRenderer.mm; sourceTree = "<group>"; };
+		AB5776D917A2883100E73929 /* OVRegularSurfaceRenderer+Buffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVRegularSurfaceRenderer+Buffers.h"; path = "Code/Core/OVRegularSurfaceRenderer+Buffers.h"; sourceTree = "<group>"; };
+		AB5776DA17A2883100E73929 /* OVRegularSurfaceRenderer+Buffers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVRegularSurfaceRenderer+Buffers.mm"; path = "Code/Core/OVRegularSurfaceRenderer+Buffers.mm"; sourceTree = "<group>"; };
+		AB5776DB17A2883100E73929 /* OVRegularSurfaceRenderer+Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVRegularSurfaceRenderer+Shaders.h"; path = "Code/Core/OVRegularSurfaceRenderer+Shaders.h"; sourceTree = "<group>"; };
+		AB5776DC17A2883100E73929 /* OVRegularSurfaceRenderer+Shaders.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVRegularSurfaceRenderer+Shaders.mm"; path = "Code/Core/OVRegularSurfaceRenderer+Shaders.mm"; sourceTree = "<group>"; };
+		AB5776E017A2883900E73929 /* OVSurfaceRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVSurfaceRenderer.h; path = Code/Core/OVSurfaceRenderer.h; sourceTree = "<group>"; };
+		AB5776E117A2883900E73929 /* OVSurfaceRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVSurfaceRenderer.mm; path = Code/Core/OVSurfaceRenderer.mm; sourceTree = "<group>"; };
+		AB5776E317A2885300E73929 /* OV2DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OV2DView.h; path = Code/GUI/OV2DView.h; sourceTree = "<group>"; };
+		AB5776E417A2885300E73929 /* OV2DView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OV2DView.mm; path = Code/GUI/OV2DView.mm; sourceTree = "<group>"; };
+		AB5776E717A2885300E73929 /* OV3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OV3DView.h; path = Code/GUI/OV3DView.h; sourceTree = "<group>"; };
+		AB5776E817A2885300E73929 /* OV3DView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OV3DView.mm; path = Code/GUI/OV3DView.mm; sourceTree = "<group>"; };
+		AB5776EB17A2885300E73929 /* OVGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVGLView.h; path = Code/GUI/OVGLView.h; sourceTree = "<group>"; };
+		AB5776EC17A2885300E73929 /* OVGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVGLView.mm; path = Code/GUI/OVGLView.mm; sourceTree = "<group>"; };
+		AB5776ED17A2885300E73929 /* OVMapOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVMapOverlay.h; path = Code/GUI/OVMapOverlay.h; sourceTree = "<group>"; };
+		AB5776EE17A2885300E73929 /* OVMapOverlay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVMapOverlay.mm; path = Code/GUI/OVMapOverlay.mm; sourceTree = "<group>"; };
+		AB5776EF17A2885300E73929 /* OVMapOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVMapOverlayRenderer.h; path = Code/GUI/OVMapOverlayRenderer.h; sourceTree = "<group>"; };
+		AB5776F017A2885300E73929 /* OVMapOverlayRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVMapOverlayRenderer.mm; path = Code/GUI/OVMapOverlayRenderer.mm; sourceTree = "<group>"; };
+		AB5776F117A2885300E73929 /* OVPlatformAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVPlatformAnnotation.h; path = Code/GUI/OVPlatformAnnotation.h; sourceTree = "<group>"; };
+		AB5776F217A2885300E73929 /* OVPlatformAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OVPlatformAnnotation.m; path = Code/GUI/OVPlatformAnnotation.m; sourceTree = "<group>"; };
+		AB5776F317A2885300E73929 /* OVPropertiesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVPropertiesView.h; path = Code/GUI/OVPropertiesView.h; sourceTree = "<group>"; };
+		AB5776F417A2885300E73929 /* OVPropertiesView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVPropertiesView.mm; path = Code/GUI/OVPropertiesView.mm; sourceTree = "<group>"; };
+		AB5776F717A2885300E73929 /* OVTimeSeriesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVTimeSeriesView.h; path = Code/GUI/OVTimeSeriesView.h; sourceTree = "<group>"; };
+		AB5776F817A2885300E73929 /* OVTimeSeriesView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVTimeSeriesView.mm; path = Code/GUI/OVTimeSeriesView.mm; sourceTree = "<group>"; };
+		AB57770717A288D800E73929 /* Ovis-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ovis-Prefix.pch"; sourceTree = "<group>"; };
+		AB57770817A288D800E73929 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB684F8B195979DE00F93DE5 /* OVPathlineRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVPathlineRenderer.h; path = Code/Core/OVPathlineRenderer.h; sourceTree = "<group>"; };
+		AB684F8C195979DE00F93DE5 /* OVPathlineRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVPathlineRenderer.mm; path = Code/Core/OVPathlineRenderer.mm; sourceTree = "<group>"; };
+		AB684F8D195979DE00F93DE5 /* OVPathlineRenderer+Buffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVPathlineRenderer+Buffers.h"; path = "Code/Core/OVPathlineRenderer+Buffers.h"; sourceTree = "<group>"; };
+		AB684F8E195979DE00F93DE5 /* OVPathlineRenderer+Buffers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVPathlineRenderer+Buffers.mm"; path = "Code/Core/OVPathlineRenderer+Buffers.mm"; sourceTree = "<group>"; };
+		AB684F8F195979DE00F93DE5 /* OVPathlineRenderer+Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVPathlineRenderer+Shaders.h"; path = "Code/Core/OVPathlineRenderer+Shaders.h"; sourceTree = "<group>"; };
+		AB684F90195979DE00F93DE5 /* OVPathlineRenderer+Shaders.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVPathlineRenderer+Shaders.mm"; path = "Code/Core/OVPathlineRenderer+Shaders.mm"; sourceTree = "<group>"; };
+		AB684F9419597F6000F93DE5 /* glslProgramPathlineRenderer.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = glslProgramPathlineRenderer.fsh; path = Code/Shaders/glslProgramPathlineRenderer.fsh; sourceTree = "<group>"; };
+		AB684F9519597F6000F93DE5 /* glslProgramPathlineRenderer.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = glslProgramPathlineRenderer.vsh; path = Code/Shaders/glslProgramPathlineRenderer.vsh; sourceTree = "<group>"; };
+		AB71B8FC17719BA500AEBF59 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		AB73120C180D305400C3CBD0 /* OVNCLoaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVNCLoaderController.h; path = Code/GUI/OVNCLoaderController.h; sourceTree = "<group>"; };
+		AB73120D180D305400C3CBD0 /* OVNCLoaderController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVNCLoaderController.mm; path = Code/GUI/OVNCLoaderController.mm; sourceTree = "<group>"; };
+		AB7B7C1518D0643A00F25829 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AB91A18C19C63FB2007BFB7A /* OVVariable2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVVariable2D.h; path = Code/Core/OVVariable2D.h; sourceTree = "<group>"; };
+		AB91A18D19C63FB2007BFB7A /* OVVariable2D.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVVariable2D.mm; path = Code/Core/OVVariable2D.mm; sourceTree = "<group>"; };
+		AB91A19219C63FCD007BFB7A /* OVStatistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVStatistic.h; path = Code/Core/OVStatistic.h; sourceTree = "<group>"; };
+		AB91A19319C63FCD007BFB7A /* OVStatistic.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVStatistic.mm; path = Code/Core/OVStatistic.mm; sourceTree = "<group>"; };
+		AB91A1AF19C73D14007BFB7A /* OVHistogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVHistogram.h; path = Code/Core/OVHistogram.h; sourceTree = "<group>"; };
+		AB91A1B019C73D14007BFB7A /* OVHistogram.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVHistogram.mm; path = Code/Core/OVHistogram.mm; sourceTree = "<group>"; };
+		AB96E59418B63EE700DEB781 /* OVSurfaceRenderer+Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVSurfaceRenderer+Shaders.h"; path = "Code/Core/OVSurfaceRenderer+Shaders.h"; sourceTree = "<group>"; };
+		AB96E59518B63EE700DEB781 /* OVSurfaceRenderer+Shaders.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVSurfaceRenderer+Shaders.mm"; path = "Code/Core/OVSurfaceRenderer+Shaders.mm"; sourceTree = "<group>"; };
+		AB96E59918B6426600DEB781 /* OVSurfaceRenderer+Buffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OVSurfaceRenderer+Buffers.h"; path = "Code/Core/OVSurfaceRenderer+Buffers.h"; sourceTree = "<group>"; };
+		AB96E59A18B6426600DEB781 /* OVSurfaceRenderer+Buffers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "OVSurfaceRenderer+Buffers.mm"; path = "Code/Core/OVSurfaceRenderer+Buffers.mm"; sourceTree = "<group>"; };
+		AB9E2FFD182122850082600B /* OVRawFilePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVRawFilePresenter.h; path = Code/GUI/OVRawFilePresenter.h; sourceTree = "<group>"; };
+		AB9E2FFE182122850082600B /* OVRawFilePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OVRawFilePresenter.m; path = Code/GUI/OVRawFilePresenter.m; sourceTree = "<group>"; };
+		ABA054C818C626CC003651C1 /* Ovis.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Ovis.entitlements; path = OVis/Ovis.entitlements; sourceTree = "<group>"; };
+		ABA22D6B180FEAD8007236A7 /* OVPropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVPropertiesViewController.h; path = Code/GUI/OVPropertiesViewController.h; sourceTree = "<group>"; };
+		ABA22D6C180FEAD8007236A7 /* OVPropertiesViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVPropertiesViewController.mm; path = Code/GUI/OVPropertiesViewController.mm; sourceTree = "<group>"; };
+		ABA22D74180FEC69007236A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PropertiesView.xib; sourceTree = "<group>"; };
+		ABA22D76180FF8BD007236A7 /* OV3DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OV3DViewController.h; path = Code/GUI/OV3DViewController.h; sourceTree = "<group>"; };
+		ABA22D77180FF8BD007236A7 /* OV3DViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OV3DViewController.mm; path = Code/GUI/OV3DViewController.mm; sourceTree = "<group>"; };
+		ABB265E518BA2DA0001E0DC7 /* glslProgramBasicGLColorBuffer.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = glslProgramBasicGLColorBuffer.fsh; path = Code/Shaders/glslProgramBasicGLColorBuffer.fsh; sourceTree = "<group>"; };
+		ABB265E618BA2DA0001E0DC7 /* glslProgramBasicGLColorBuffer.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = glslProgramBasicGLColorBuffer.vsh; path = Code/Shaders/glslProgramBasicGLColorBuffer.vsh; sourceTree = "<group>"; };
+		ABC0A8B217F4ABC400E98251 /* wire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wire.png; sourceTree = "<group>"; };
+		ABC7B1BC1963230B004501C5 /* glslProgramPathlineRendererFilter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = glslProgramPathlineRendererFilter.fsh; path = Code/Shaders/glslProgramPathlineRendererFilter.fsh; sourceTree = "<group>"; };
+		ABC7B1BD1963230B004501C5 /* glslProgramPathlineRendererFilter.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = glslProgramPathlineRendererFilter.vsh; path = Code/Shaders/glslProgramPathlineRendererFilter.vsh; sourceTree = "<group>"; };
+		ABDD306418B2564E00A58B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/2DView.xib; sourceTree = "<group>"; };
+		ABDD306718B2565B00A58B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HistogramView.xib; sourceTree = "<group>"; };
+		ABDD306C18B257AE00A58B73 /* Ovis-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Ovis-Info.plist"; sourceTree = "<group>"; };
+		ABDD306F18B2585800A58B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
+		ABDD307118B263D900A58B73 /* OVPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVPreferencesWindowController.h; path = Code/GUI/OVPreferencesWindowController.h; sourceTree = "<group>"; };
+		ABDD307218B263D900A58B73 /* OVPreferencesWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVPreferencesWindowController.mm; path = Code/GUI/OVPreferencesWindowController.mm; sourceTree = "<group>"; };
+		ABE3D31719C8808F006420E9 /* OVVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVVariable.h; path = Code/Core/OVVariable.h; sourceTree = "<group>"; };
+		ABE3D31819C8808F006420E9 /* OVVariable.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVVariable.mm; path = Code/Core/OVVariable.mm; sourceTree = "<group>"; };
+		ABE3D31D19C885F2006420E9 /* OVVariable1D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVVariable1D.h; path = Code/Core/OVVariable1D.h; sourceTree = "<group>"; };
+		ABE3D31E19C885F2006420E9 /* OVVariable1D.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVVariable1D.mm; path = Code/Core/OVVariable1D.mm; sourceTree = "<group>"; };
+		ABEDE80C19E80714008B4D02 /* OVTimeSeriesContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVTimeSeriesContainerView.h; path = Code/GUI/OVTimeSeriesContainerView.h; sourceTree = "<group>"; };
+		ABEDE80D19E80714008B4D02 /* OVTimeSeriesContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OVTimeSeriesContainerView.m; path = Code/GUI/OVTimeSeriesContainerView.m; sourceTree = "<group>"; };
+		ABEE488E18100730001848D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/3DView.xib; sourceTree = "<group>"; };
+		ABEE489218100EA8001848D9 /* OV2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OV2DViewController.h; path = Code/GUI/OV2DViewController.h; sourceTree = "<group>"; };
+		ABEE489318100EA8001848D9 /* OV2DViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OV2DViewController.mm; path = Code/GUI/OV2DViewController.mm; sourceTree = "<group>"; };
+		ABEE4895181014BA001848D9 /* OVHistogramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVHistogramViewController.h; path = Code/GUI/OVHistogramViewController.h; sourceTree = "<group>"; };
+		ABEE4896181014BA001848D9 /* OVHistogramViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVHistogramViewController.mm; path = Code/GUI/OVHistogramViewController.mm; sourceTree = "<group>"; };
+		ABEE489B181018E0001848D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TimeSeriesView.xib; sourceTree = "<group>"; };
+		ABEE489D18101919001848D9 /* OVTimeSeriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVTimeSeriesViewController.h; path = Code/GUI/OVTimeSeriesViewController.h; sourceTree = "<group>"; };
+		ABEE489E18101919001848D9 /* OVTimeSeriesViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVTimeSeriesViewController.mm; path = Code/GUI/OVTimeSeriesViewController.mm; sourceTree = "<group>"; };
+		ABEE48A018103EF7001848D9 /* OVMainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OVMainWindow.h; path = Code/GUI/OVMainWindow.h; sourceTree = "<group>"; };
+		ABEE48A118103EF7001848D9 /* OVMainWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OVMainWindow.mm; path = Code/GUI/OVMainWindow.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB3C4111176C9B2000EAFB3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB33B54122F32B6E0053F550 /* CorePlot.framework in Frameworks */,
+				AB33B4F922F328010053F550 /* libnetcdf.a in Frameworks */,
+				AB01C43817F34D290015EFE8 /* QuartzCore.framework in Frameworks */,
+				AB7B7C1618D0643A00F25829 /* MapKit.framework in Frameworks */,
+				AB1D92E2177214F700758035 /* CoreGraphics.framework in Frameworks */,
+				AB0D2AF41774D26D0009F5A5 /* CoreLocation.framework in Frameworks */,
+				AB71B8FD17719BA500AEBF59 /* GLKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3C4132176C9B2000EAFB3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3C4138176C9B2000EAFB3E /* Cocoa.framework in Frameworks */,
+				AB3C4137176C9B2000EAFB3E /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB1D92DD177206D100758035 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB5776B017A287EE00E73929 /* OVColormap.h */,
+				AB5776B117A287EE00E73929 /* OVColormap.mm */,
+				AB5776B217A287EE00E73929 /* OVViewSettings.h */,
+				AB5776B317A287EE00E73929 /* OVViewSettings.mm */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AB33B52222F32B4A0053F550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB33B53222F32B4A0053F550 /* CorePlot.framework */,
+				AB33B53422F32B4A0053F550 /* UnitTests.xctest */,
+				AB33B53622F32B4A0053F550 /* CorePlot.framework */,
+				AB33B53822F32B4A0053F550 /* UnitTests iOS.xctest */,
+				AB33B53A22F32B4A0053F550 /* libCorePlot-CocoaTouch.a */,
+				AB33B53C22F32B4A0053F550 /* CorePlot-CocoaTouchTests.xctest */,
+				AB33B53E22F32B4A0053F550 /* CorePlot.framework */,
+				AB33B54022F32B4A0053F550 /* UnitTests tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB3C410B176C9B2000EAFB3E = {
+			isa = PBXGroup;
+			children = (
+				ABA054C818C626CC003651C1 /* Ovis.entitlements */,
+				AB3C411D176C9B2000EAFB3E /* OVis */,
+				AB3C413B176C9B2000EAFB3E /* OVisTests */,
+				AB3C4116176C9B2000EAFB3E /* Frameworks */,
+				AB3C4115176C9B2000EAFB3E /* Products */,
+				AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */,
+			);
+			indentWidth = 3;
+			sourceTree = "<group>";
+			tabWidth = 3;
+			wrapsLines = 1;
+		};
+		AB3C4115176C9B2000EAFB3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB3C4114176C9B2000EAFB3E /* Ovis.app */,
+				AB3C4135176C9B2000EAFB3E /* Ovis.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB3C4116176C9B2000EAFB3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB33B4F822F328010053F550 /* libnetcdf.a */,
+				AB7B7C1518D0643A00F25829 /* MapKit.framework */,
+				AB01C43717F34D290015EFE8 /* QuartzCore.framework */,
+				AB0D2AF31774D26D0009F5A5 /* CoreLocation.framework */,
+				AB1D92E1177214F700758035 /* CoreGraphics.framework */,
+				AB71B8FC17719BA500AEBF59 /* GLKit.framework */,
+				AB3C4117176C9B2000EAFB3E /* Cocoa.framework */,
+				AB3C4136176C9B2000EAFB3E /* XCTest.framework */,
+				AB3C4119176C9B2000EAFB3E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB3C4119176C9B2000EAFB3E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB3C411A176C9B2000EAFB3E /* AppKit.framework */,
+				AB3C411B176C9B2000EAFB3E /* CoreData.framework */,
+				AB3C411C176C9B2000EAFB3E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AB3C411D176C9B2000EAFB3E /* OVis */ = {
+			isa = PBXGroup;
+			children = (
+				AB57768917A287A900E73929 /* OVAppDelegate.h */,
+				AB57769817A287A900E73929 /* OVAppDelegate.mm */,
+				AB57768A17A287A900E73929 /* OVAppDelegateProtocol.h */,
+				AB3C417A176D95D700EAFB3E /* Core */,
+				AB3C4178176D95BD00EAFB3E /* GUI */,
+				AB3C4179176D95CD00EAFB3E /* Support */,
+				AB3C411E176C9B2000EAFB3E /* Resources */,
+			);
+			path = OVis;
+			sourceTree = "<group>";
+		};
+		AB3C411E176C9B2000EAFB3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABC0A8B217F4ABC400E98251 /* wire.png */,
+				AB3C412F176C9B2000EAFB3E /* Images.xcassets */,
+				ABDD306C18B257AE00A58B73 /* Ovis-Info.plist */,
+				AB3C4120176C9B2000EAFB3E /* InfoPlist.strings */,
+				AB3C4126176C9B2000EAFB3E /* Credits.rtf */,
+				AB57770717A288D800E73929 /* Ovis-Prefix.pch */,
+				AB57770817A288D800E73929 /* main.m */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AB3C413B176C9B2000EAFB3E /* OVisTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB3C4141176C9B2000EAFB3E /* OVisTests.m */,
+				AB3C413C176C9B2000EAFB3E /* Supporting Files */,
+			);
+			path = OVisTests;
+			sourceTree = "<group>";
+		};
+		AB3C413C176C9B2000EAFB3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB3C413D176C9B2000EAFB3E /* OvisTests-Info.plist */,
+				AB3C413E176C9B2000EAFB3E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB3C4178176D95BD00EAFB3E /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				AB3C412C176C9B2000EAFB3E /* MainMenu.xib */,
+				ABDD306318B2564E00A58B73 /* 2DView.xib */,
+				ABEE488D18100730001848D9 /* 3DView.xib */,
+				ABDD306618B2565B00A58B73 /* HistogramView.xib */,
+				ABA22D73180FEC69007236A7 /* PropertiesView.xib */,
+				ABEE489A181018E0001848D9 /* TimeSeriesView.xib */,
+				AB0E2A6A180D776D009CDE12 /* NetCDFLoaderSheet.xib */,
+				ABDD306E18B2585800A58B73 /* PreferencesWindow.xib */,
+				ABEE48A018103EF7001848D9 /* OVMainWindow.h */,
+				ABEE48A118103EF7001848D9 /* OVMainWindow.mm */,
+				AB5776E317A2885300E73929 /* OV2DView.h */,
+				AB5776E417A2885300E73929 /* OV2DView.mm */,
+				AB5776E717A2885300E73929 /* OV3DView.h */,
+				AB5776E817A2885300E73929 /* OV3DView.mm */,
+				AB5776EB17A2885300E73929 /* OVGLView.h */,
+				AB5776EC17A2885300E73929 /* OVGLView.mm */,
+				AB5776F317A2885300E73929 /* OVPropertiesView.h */,
+				AB5776F417A2885300E73929 /* OVPropertiesView.mm */,
+				AB5776F717A2885300E73929 /* OVTimeSeriesView.h */,
+				AB5776F817A2885300E73929 /* OVTimeSeriesView.mm */,
+				ABEDE80C19E80714008B4D02 /* OVTimeSeriesContainerView.h */,
+				ABEDE80D19E80714008B4D02 /* OVTimeSeriesContainerView.m */,
+				AB5776ED17A2885300E73929 /* OVMapOverlay.h */,
+				AB5776EE17A2885300E73929 /* OVMapOverlay.mm */,
+				AB5776EF17A2885300E73929 /* OVMapOverlayRenderer.h */,
+				AB5776F017A2885300E73929 /* OVMapOverlayRenderer.mm */,
+				AB5776F117A2885300E73929 /* OVPlatformAnnotation.h */,
+				AB5776F217A2885300E73929 /* OVPlatformAnnotation.m */,
+				ABEE489218100EA8001848D9 /* OV2DViewController.h */,
+				ABEE489318100EA8001848D9 /* OV2DViewController.mm */,
+				ABA22D76180FF8BD007236A7 /* OV3DViewController.h */,
+				ABA22D77180FF8BD007236A7 /* OV3DViewController.mm */,
+				ABA22D6B180FEAD8007236A7 /* OVPropertiesViewController.h */,
+				ABA22D6C180FEAD8007236A7 /* OVPropertiesViewController.mm */,
+				ABDD307118B263D900A58B73 /* OVPreferencesWindowController.h */,
+				ABDD307218B263D900A58B73 /* OVPreferencesWindowController.mm */,
+				AB0E2A62180D58CF009CDE12 /* OVHistogramController.h */,
+				AB0E2A63180D58CF009CDE12 /* OVHistogramController.mm */,
+				ABEE4895181014BA001848D9 /* OVHistogramViewController.h */,
+				ABEE4896181014BA001848D9 /* OVHistogramViewController.mm */,
+				ABEE489D18101919001848D9 /* OVTimeSeriesViewController.h */,
+				ABEE489E18101919001848D9 /* OVTimeSeriesViewController.mm */,
+				AB73120C180D305400C3CBD0 /* OVNCLoaderController.h */,
+				AB73120D180D305400C3CBD0 /* OVNCLoaderController.mm */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		AB3C4179176D95CD00EAFB3E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				AB57767C17A2879300E73929 /* general.h */,
+				AB57767D17A2879300E73929 /* gl_error.h */,
+				AB57767E17A2879300E73929 /* gl_general.h */,
+				AB57767F17A2879300E73929 /* SMDoubleSlider.h */,
+				AB57768117A2879300E73929 /* SMDoubleSlider.m */,
+				AB57768017A2879300E73929 /* SMDoubleSliderCell.h */,
+				AB57768217A2879300E73929 /* SMDoubleSliderCell.m */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		AB3C417A176D95D700EAFB3E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AB1D92DD177206D100758035 /* View */,
+				AB3C417D176D962900EAFB3E /* Data */,
+				AB3C417B176D95DF00EAFB3E /* SurfaceRenderer */,
+				ABAB397C177A0485007DB711 /* TimeSeriesRenderer */,
+				AB684F8A195979C900F93DE5 /* PathlineRender */,
+				ABC51EB7176F0CB4007456E8 /* OpenGL */,
+				AB3C417C176D95F700EAFB3E /* Shaders */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AB3C417B176D95DF00EAFB3E /* SurfaceRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				AB5776E017A2883900E73929 /* OVSurfaceRenderer.h */,
+				AB5776E117A2883900E73929 /* OVSurfaceRenderer.mm */,
+				AB96E59918B6426600DEB781 /* OVSurfaceRenderer+Buffers.h */,
+				AB96E59A18B6426600DEB781 /* OVSurfaceRenderer+Buffers.mm */,
+				AB96E59418B63EE700DEB781 /* OVSurfaceRenderer+Shaders.h */,
+				AB96E59518B63EE700DEB781 /* OVSurfaceRenderer+Shaders.mm */,
+				AB5776D717A2883100E73929 /* OVRegularSurfaceRenderer.h */,
+				AB5776D817A2883100E73929 /* OVRegularSurfaceRenderer.mm */,
+				AB5776D917A2883100E73929 /* OVRegularSurfaceRenderer+Buffers.h */,
+				AB5776DA17A2883100E73929 /* OVRegularSurfaceRenderer+Buffers.mm */,
+				AB5776DB17A2883100E73929 /* OVRegularSurfaceRenderer+Shaders.h */,
+				AB5776DC17A2883100E73929 /* OVRegularSurfaceRenderer+Shaders.mm */,
+				AB5776CE17A2882200E73929 /* OVUnstructuredSurfaceRenderer.h */,
+				AB5776CF17A2882200E73929 /* OVUnstructuredSurfaceRenderer.mm */,
+				AB5776D017A2882200E73929 /* OVUnstructuredSurfaceRenderer+Buffers.h */,
+				AB5776D117A2882200E73929 /* OVUnstructuredSurfaceRenderer+Buffers.mm */,
+				AB5776D217A2882200E73929 /* OVUnstructuredSurfaceRenderer+Shaders.h */,
+				AB5776D317A2882200E73929 /* OVUnstructuredSurfaceRenderer+Shaders.mm */,
+			);
+			name = SurfaceRenderer;
+			sourceTree = "<group>";
+		};
+		AB3C417C176D95F700EAFB3E /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				AB57767017A2875900E73929 /* glslProgramBasicGL.fsh */,
+				AB57767317A2875900E73929 /* glslProgramBasicGL.vsh */,
+				ABB265E518BA2DA0001E0DC7 /* glslProgramBasicGLColorBuffer.fsh */,
+				ABB265E618BA2DA0001E0DC7 /* glslProgramBasicGLColorBuffer.vsh */,
+				AB684F9419597F6000F93DE5 /* glslProgramPathlineRenderer.fsh */,
+				AB684F9519597F6000F93DE5 /* glslProgramPathlineRenderer.vsh */,
+				ABC7B1BC1963230B004501C5 /* glslProgramPathlineRendererFilter.fsh */,
+				ABC7B1BD1963230B004501C5 /* glslProgramPathlineRendererFilter.vsh */,
+				AB57767117A2875900E73929 /* glslProgramRegularSurfaceRenderer.fsh */,
+				AB57767417A2875900E73929 /* glslProgramRegularSurfaceRenderer.vsh */,
+				AB3BBF6117F9E1BF000E9E4E /* glslProgramUnstructuredSurfaceRenderer.gsh */,
+				AB57767217A2875900E73929 /* glslProgramUnstructuredSurfaceRenderer.fsh */,
+				AB57767517A2875900E73929 /* glslProgramUnstructuredSurfaceRenderer.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		AB3C417D176D962900EAFB3E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AB5776B617A2880000E73929 /* OVEnsembleData.h */,
+				AB5776B717A2880000E73929 /* OVEnsembleData.mm */,
+				AB5776B817A2880000E73929 /* OVEnsembleData+Loader.h */,
+				AB5776B917A2880000E73929 /* OVEnsembleData+Loader.mm */,
+				AB49BC2817B2741500592254 /* OVEnsembleData+Pathlines.h */,
+				AB49BC2917B2741500592254 /* OVEnsembleData+Pathlines.mm */,
+				AB5776BA17A2880000E73929 /* OVEnsembleData+Platforms.h */,
+				AB5776BB17A2880000E73929 /* OVEnsembleData+Platforms.mm */,
+				AB5776BC17A2880000E73929 /* OVEnsembleData+Statistics.h */,
+				AB5776BD17A2880000E73929 /* OVEnsembleData+Statistics.mm */,
+				AB212D0C181D139C00D4A398 /* OVNetCDFLoader.h */,
+				AB212D0D181D139C00D4A398 /* OVNetCDFLoader.mm */,
+				AB9E2FFD182122850082600B /* OVRawFilePresenter.h */,
+				AB9E2FFE182122850082600B /* OVRawFilePresenter.m */,
+				AB5776BE17A2880000E73929 /* OVOffShorePlatform.h */,
+				AB5776BF17A2880000E73929 /* OVOffShorePlatform.m */,
+				AB91A19219C63FCD007BFB7A /* OVStatistic.h */,
+				AB91A19319C63FCD007BFB7A /* OVStatistic.mm */,
+				AB91A1AF19C73D14007BFB7A /* OVHistogram.h */,
+				AB91A1B019C73D14007BFB7A /* OVHistogram.mm */,
+				ABE3D31719C8808F006420E9 /* OVVariable.h */,
+				ABE3D31819C8808F006420E9 /* OVVariable.mm */,
+				ABE3D31D19C885F2006420E9 /* OVVariable1D.h */,
+				ABE3D31E19C885F2006420E9 /* OVVariable1D.mm */,
+				AB91A18C19C63FB2007BFB7A /* OVVariable2D.h */,
+				AB91A18D19C63FB2007BFB7A /* OVVariable2D.mm */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		AB684F8A195979C900F93DE5 /* PathlineRender */ = {
+			isa = PBXGroup;
+			children = (
+				AB684F8B195979DE00F93DE5 /* OVPathlineRenderer.h */,
+				AB684F8C195979DE00F93DE5 /* OVPathlineRenderer.mm */,
+				AB684F8D195979DE00F93DE5 /* OVPathlineRenderer+Buffers.h */,
+				AB684F8E195979DE00F93DE5 /* OVPathlineRenderer+Buffers.mm */,
+				AB684F8F195979DE00F93DE5 /* OVPathlineRenderer+Shaders.h */,
+				AB684F90195979DE00F93DE5 /* OVPathlineRenderer+Shaders.mm */,
+			);
+			name = PathlineRender;
+			sourceTree = "<group>";
+		};
+		ABAB397C177A0485007DB711 /* TimeSeriesRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				AB5776C517A2881100E73929 /* OVTimeSeriesRenderer.h */,
+				AB5776C617A2881100E73929 /* OVTimeSeriesRenderer.mm */,
+				AB5776C717A2881100E73929 /* OVTimeSeriesRenderer+Buffers.h */,
+				AB5776C817A2881100E73929 /* OVTimeSeriesRenderer+Buffers.mm */,
+				AB5776C917A2881100E73929 /* OVTimeSeriesRenderer+Shaders.h */,
+				AB5776CA17A2881100E73929 /* OVTimeSeriesRenderer+Shaders.mm */,
+			);
+			name = TimeSeriesRenderer;
+			sourceTree = "<group>";
+		};
+		ABC51EB7176F0CB4007456E8 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				AB5776AD17A287C100E73929 /* OVGLSLProgram.h */,
+				AB5776AE17A287C100E73929 /* OVGLSLProgram.mm */,
+				AB0B6DFC17A910E100F9DCFB /* OVGLContextManager.h */,
+				AB0B6DFD17A910E100F9DCFB /* OVGLContextManager.mm */,
+			);
+			name = OpenGL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB3C4113176C9B2000EAFB3E /* Ovis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3C4145176C9B2000EAFB3E /* Build configuration list for PBXNativeTarget "Ovis" */;
+			buildPhases = (
+				AB3C4110176C9B2000EAFB3E /* Sources */,
+				AB3C4111176C9B2000EAFB3E /* Frameworks */,
+				AB6226B417FC9BDA0001B224 /* CopyFiles */,
+				AB3C4112176C9B2000EAFB3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB33B54422F32D8F0053F550 /* PBXTargetDependency */,
+			);
+			name = Ovis;
+			productName = OVis;
+			productReference = AB3C4114176C9B2000EAFB3E /* Ovis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB3C4134176C9B2000EAFB3E /* OvisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3C4148176C9B2000EAFB3E /* Build configuration list for PBXNativeTarget "OvisTests" */;
+			buildPhases = (
+				AB3C4131176C9B2000EAFB3E /* Sources */,
+				AB3C4132176C9B2000EAFB3E /* Frameworks */,
+				AB3C4133176C9B2000EAFB3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB3C413A176C9B2000EAFB3E /* PBXTargetDependency */,
+			);
+			name = OvisTests;
+			productName = OVisTests;
+			productReference = AB3C4135176C9B2000EAFB3E /* Ovis.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB3C410C176C9B2000EAFB3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OVIS;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Thomas Höllt";
+				TargetAttributes = {
+					AB3C4113176C9B2000EAFB3E = {
+						SystemCapabilities = {
+							com.apple.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					AB3C4134176C9B2000EAFB3E = {
+						TestTargetID = AB3C4113176C9B2000EAFB3E;
+					};
+				};
+			};
+			buildConfigurationList = AB3C410F176C9B2000EAFB3E /* Build configuration list for PBXProject "Ovis" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB3C410B176C9B2000EAFB3E;
+			productRefGroup = AB3C4115176C9B2000EAFB3E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AB33B52222F32B4A0053F550 /* Products */;
+					ProjectRef = AB33B52122F32B4A0053F550 /* CorePlot.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				AB3C4113176C9B2000EAFB3E /* Ovis */,
+				AB3C4134176C9B2000EAFB3E /* OvisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AB33B53222F32B4A0053F550 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = AB33B53122F32B4A0053F550 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB33B53422F32B4A0053F550 /* UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.xctest;
+			remoteRef = AB33B53322F32B4A0053F550 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB33B53622F32B4A0053F550 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = AB33B53522F32B4A0053F550 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB33B53822F32B4A0053F550 /* UnitTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UnitTests iOS.xctest";
+			remoteRef = AB33B53722F32B4A0053F550 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB33B53A22F32B4A0053F550 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = AB33B53922F32B4A0053F550 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB33B53C22F32B4A0053F550 /* CorePlot-CocoaTouchTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CorePlot-CocoaTouchTests.xctest";
+			remoteRef = AB33B53B22F32B4A0053F550 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB33B53E22F32B4A0053F550 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = AB33B53D22F32B4A0053F550 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB33B54022F32B4A0053F550 /* UnitTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UnitTests tvOS.xctest";
+			remoteRef = AB33B53F22F32B4A0053F550 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB3C4112176C9B2000EAFB3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3C4130176C9B2000EAFB3E /* Images.xcassets in Resources */,
+				ABD75A2C17A2856D002E2E39 /* MainMenu.xib in Resources */,
+				ABDD306518B2564E00A58B73 /* 2DView.xib in Resources */,
+				ABEE488F18100730001848D9 /* 3DView.xib in Resources */,
+				ABEE489C181018E0001848D9 /* TimeSeriesView.xib in Resources */,
+				ABDD306818B2565B00A58B73 /* HistogramView.xib in Resources */,
+				ABA22D75180FEC69007236A7 /* PropertiesView.xib in Resources */,
+				ABDD307018B2585800A58B73 /* PreferencesWindow.xib in Resources */,
+				AB0E2A6C180D776D009CDE12 /* NetCDFLoaderSheet.xib in Resources */,
+				ABA054C918C626CC003651C1 /* Ovis.entitlements in Resources */,
+				AB684F9619597F6000F93DE5 /* glslProgramPathlineRenderer.fsh in Resources */,
+				ABC7B1BE1963230B004501C5 /* glslProgramPathlineRendererFilter.fsh in Resources */,
+				AB57767917A2876900E73929 /* glslProgramBasicGL.vsh in Resources */,
+				AB57767617A2876900E73929 /* glslProgramBasicGL.fsh in Resources */,
+				ABB265E918BA2DC0001E0DC7 /* glslProgramBasicGLColorBuffer.fsh in Resources */,
+				ABB265EA18BA2DC0001E0DC7 /* glslProgramBasicGLColorBuffer.vsh in Resources */,
+				AB57767A17A2876900E73929 /* glslProgramRegularSurfaceRenderer.vsh in Resources */,
+				AB684F9719597F6000F93DE5 /* glslProgramPathlineRenderer.vsh in Resources */,
+				ABC7B1BF1963230B004501C5 /* glslProgramPathlineRendererFilter.vsh in Resources */,
+				AB57767717A2876900E73929 /* glslProgramRegularSurfaceRenderer.fsh in Resources */,
+				AB57767B17A2876900E73929 /* glslProgramUnstructuredSurfaceRenderer.vsh in Resources */,
+				AB3BBF6417F9E432000E9E4E /* glslProgramUnstructuredSurfaceRenderer.gsh in Resources */,
+				AB57767817A2876900E73929 /* glslProgramUnstructuredSurfaceRenderer.fsh in Resources */,
+				AB3C4128176C9B2000EAFB3E /* Credits.rtf in Resources */,
+				ABC0A8B517F4ABFD00E98251 /* wire.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3C4133176C9B2000EAFB3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3C4140176C9B2000EAFB3E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB3C4110176C9B2000EAFB3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB684F93195979DE00F93DE5 /* OVPathlineRenderer+Shaders.mm in Sources */,
+				AB5776C217A2880000E73929 /* OVEnsembleData+Platforms.mm in Sources */,
+				AB57770517A2885300E73929 /* OVTimeSeriesView.mm in Sources */,
+				ABEE489F18101919001848D9 /* OVTimeSeriesViewController.mm in Sources */,
+				AB5776B417A287EE00E73929 /* OVColormap.mm in Sources */,
+				ABE3D31919C8808F006420E9 /* OVVariable.mm in Sources */,
+				AB73120E180D305400C3CBD0 /* OVNCLoaderController.mm in Sources */,
+				AB684F91195979DE00F93DE5 /* OVPathlineRenderer.mm in Sources */,
+				AB96E59618B63EE700DEB781 /* OVSurfaceRenderer+Shaders.mm in Sources */,
+				AB0B6DFE17A910E100F9DCFB /* OVGLContextManager.mm in Sources */,
+				ABEE489418100EA8001848D9 /* OV2DViewController.mm in Sources */,
+				AB5776C017A2880000E73929 /* OVEnsembleData.mm in Sources */,
+				AB0E2A66180D58CF009CDE12 /* OVHistogramController.mm in Sources */,
+				ABE3D31F19C885F2006420E9 /* OVVariable1D.mm in Sources */,
+				AB5776C317A2880000E73929 /* OVEnsembleData+Statistics.mm in Sources */,
+				AB5776D517A2882200E73929 /* OVUnstructuredSurfaceRenderer+Buffers.mm in Sources */,
+				AB684F92195979DE00F93DE5 /* OVPathlineRenderer+Buffers.mm in Sources */,
+				ABEE48A218103EF7001848D9 /* OVMainWindow.mm in Sources */,
+				AB5776DE17A2883100E73929 /* OVRegularSurfaceRenderer+Buffers.mm in Sources */,
+				AB91A18E19C63FB2007BFB7A /* OVVariable2D.mm in Sources */,
+				AB96E59B18B6426600DEB781 /* OVSurfaceRenderer+Buffers.mm in Sources */,
+				AB5776C117A2880000E73929 /* OVEnsembleData+Loader.mm in Sources */,
+				AB5776CC17A2881100E73929 /* OVTimeSeriesRenderer+Buffers.mm in Sources */,
+				AB5776FF17A2885300E73929 /* OVGLView.mm in Sources */,
+				ABA22D6D180FEAD8007236A7 /* OVPropertiesViewController.mm in Sources */,
+				AB91A19419C63FCD007BFB7A /* OVStatistic.mm in Sources */,
+				AB57768417A2879300E73929 /* SMDoubleSliderCell.m in Sources */,
+				AB57770917A288D800E73929 /* main.m in Sources */,
+				AB5776AF17A287C100E73929 /* OVGLSLProgram.mm in Sources */,
+				AB212D0E181D139C00D4A398 /* OVNetCDFLoader.mm in Sources */,
+				AB5776FB17A2885300E73929 /* OV2DView.mm in Sources */,
+				AB5776FD17A2885300E73929 /* OV3DView.mm in Sources */,
+				AB9E2FFF182122850082600B /* OVRawFilePresenter.m in Sources */,
+				AB57770117A2885300E73929 /* OVMapOverlayRenderer.mm in Sources */,
+				AB5776D417A2882200E73929 /* OVUnstructuredSurfaceRenderer.mm in Sources */,
+				AB5776A517A287A900E73929 /* OVAppDelegate.mm in Sources */,
+				AB49BC2A17B2741500592254 /* OVEnsembleData+Pathlines.mm in Sources */,
+				ABA22D78180FF8BD007236A7 /* OV3DViewController.mm in Sources */,
+				AB57770017A2885300E73929 /* OVMapOverlay.mm in Sources */,
+				ABEDE80E19E80714008B4D02 /* OVTimeSeriesContainerView.m in Sources */,
+				AB57770317A2885300E73929 /* OVPropertiesView.mm in Sources */,
+				AB57770217A2885300E73929 /* OVPlatformAnnotation.m in Sources */,
+				ABEE4897181014BA001848D9 /* OVHistogramViewController.mm in Sources */,
+				AB91A1B119C73D14007BFB7A /* OVHistogram.mm in Sources */,
+				AB5776C417A2880000E73929 /* OVOffShorePlatform.m in Sources */,
+				AB5776E217A2883900E73929 /* OVSurfaceRenderer.mm in Sources */,
+				AB5776DF17A2883100E73929 /* OVRegularSurfaceRenderer+Shaders.mm in Sources */,
+				AB5776DD17A2883100E73929 /* OVRegularSurfaceRenderer.mm in Sources */,
+				AB57768317A2879300E73929 /* SMDoubleSlider.m in Sources */,
+				ABDD307318B263D900A58B73 /* OVPreferencesWindowController.mm in Sources */,
+				AB5776CD17A2881100E73929 /* OVTimeSeriesRenderer+Shaders.mm in Sources */,
+				AB5776D617A2882200E73929 /* OVUnstructuredSurfaceRenderer+Shaders.mm in Sources */,
+				AB5776B517A287EE00E73929 /* OVViewSettings.mm in Sources */,
+				AB5776CB17A2881100E73929 /* OVTimeSeriesRenderer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3C4131176C9B2000EAFB3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3C4142176C9B2000EAFB3E /* OVisTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB33B54422F32D8F0053F550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot Mac";
+			targetProxy = AB33B54322F32D8F0053F550 /* PBXContainerItemProxy */;
+		};
+		AB3C413A176C9B2000EAFB3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB3C4113176C9B2000EAFB3E /* Ovis */;
+			targetProxy = AB3C4139176C9B2000EAFB3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB0E2A6A180D776D009CDE12 /* NetCDFLoaderSheet.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB0E2A6B180D776D009CDE12 /* Base */,
+			);
+			name = NetCDFLoaderSheet.xib;
+			sourceTree = "<group>";
+		};
+		AB3C4120176C9B2000EAFB3E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3C4121176C9B2000EAFB3E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB3C4126176C9B2000EAFB3E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3C4127176C9B2000EAFB3E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AB3C412C176C9B2000EAFB3E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3C412D176C9B2000EAFB3E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AB3C413E176C9B2000EAFB3E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3C413F176C9B2000EAFB3E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ABA22D73180FEC69007236A7 /* PropertiesView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABA22D74180FEC69007236A7 /* Base */,
+			);
+			name = PropertiesView.xib;
+			sourceTree = "<group>";
+		};
+		ABDD306318B2564E00A58B73 /* 2DView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABDD306418B2564E00A58B73 /* Base */,
+			);
+			name = 2DView.xib;
+			sourceTree = "<group>";
+		};
+		ABDD306618B2565B00A58B73 /* HistogramView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABDD306718B2565B00A58B73 /* Base */,
+			);
+			name = HistogramView.xib;
+			sourceTree = "<group>";
+		};
+		ABDD306E18B2585800A58B73 /* PreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABDD306F18B2585800A58B73 /* Base */,
+			);
+			name = PreferencesWindow.xib;
+			sourceTree = "<group>";
+		};
+		ABEE488D18100730001848D9 /* 3DView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABEE488E18100730001848D9 /* Base */,
+			);
+			name = 3DView.xib;
+			sourceTree = "<group>";
+		};
+		ABEE489A181018E0001848D9 /* TimeSeriesView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABEE489B181018E0001848D9 /* Base */,
+			);
+			name = TimeSeriesView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB3C4143176C9B2000EAFB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AB3C4144176C9B2000EAFB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AB3C4146176C9B2000EAFB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CODE_SIGN_ENTITLEMENTS = OVis/Ovis.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5KQUK3A88M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External/core-plot/build/Release\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OVis/Ovis-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "OVis/Ovis-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OPENCL_ARCHS = "i386 x86_64 gpu_32 gpu_64";
+				OPENCL_COMPILER_VERSION = CL1.2;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomashollt.ovis;
+				PRODUCT_NAME = Ovis;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB3C4147176C9B2000EAFB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CODE_SIGN_ENTITLEMENTS = OVis/Ovis.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5KQUK3A88M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External/core-plot/build/Release\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OVis/Ovis-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "OVis/Ovis-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OPENCL_ARCHS = "i386 x86_64 gpu_32 gpu_64";
+				OPENCL_COMPILER_VERSION = CL1.2;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomashollt.ovis;
+				PRODUCT_NAME = Ovis;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AB3C4149176C9B2000EAFB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OVis.app/Contents/MacOS/OVis";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OVis/OVis-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OVisTests/OvisTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "thoellt.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Ovis;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AB3C414A176C9B2000EAFB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OVis.app/Contents/MacOS/OVis";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OVis/OVis-Prefix.pch";
+				INFOPLIST_FILE = "OVisTests/OvisTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "thoellt.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Ovis;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB3C410F176C9B2000EAFB3E /* Build configuration list for PBXProject "Ovis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3C4143176C9B2000EAFB3E /* Debug */,
+				AB3C4144176C9B2000EAFB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3C4145176C9B2000EAFB3E /* Build configuration list for PBXNativeTarget "Ovis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3C4146176C9B2000EAFB3E /* Debug */,
+				AB3C4147176C9B2000EAFB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3C4148176C9B2000EAFB3E /* Build configuration list for PBXNativeTarget "OvisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3C4149176C9B2000EAFB3E /* Debug */,
+				AB3C414A176C9B2000EAFB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB3C410C176C9B2000EAFB3E /* Project object */;
+}

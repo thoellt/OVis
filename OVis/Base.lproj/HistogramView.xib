@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6245"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="OVHistogramViewController">
+            <connections>
+                <outlet property="_histogramController" destination="nQz-wb-X5L" id="rJV-rd-mmj"/>
+                <outlet property="_leftVariableSelector" destination="Qgc-xU-qNf" id="3rQ-sF-Rru"/>
+                <outlet property="_rightVariableSelector" destination="hWC-WP-Fah" id="9KG-Ok-5m0"/>
+                <outlet property="view" destination="QOH-pN-IwF" id="KMy-db-hcO"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="QOH-pN-IwF" userLabel="Histogram View">
+            <rect key="frame" x="0.0" y="0.0" width="826" height="653"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="p4d-xa-x9W">
+                    <rect key="frame" x="20" y="20" width="393" height="613"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="PBt-Sa-gBv" customClass="CPTGraphHostingView">
+                            <rect key="frame" x="0.0" y="29" width="393" height="584"/>
+                        </customView>
+                        <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qgc-xU-qNf">
+                            <rect key="frame" x="78" y="-3" width="308" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="dyq-Nl-jUf"/>
+                            </constraints>
+                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="Sf6-lb-t66">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="menu"/>
+                                <menu key="menu" id="DGS-VD-iCZ"/>
+                            </popUpButtonCell>
+                            <connections>
+                                <action selector="selectLeftVariable:" target="-2" id="YDC-j6-Kqg"/>
+                            </connections>
+                        </popUpButton>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Qgc-xU-qNf" secondAttribute="trailing" constant="10" id="89a-a2-odx"/>
+                        <constraint firstAttribute="trailing" secondItem="PBt-Sa-gBv" secondAttribute="trailing" id="Dg5-Nq-Kah"/>
+                        <constraint firstAttribute="bottom" secondItem="Qgc-xU-qNf" secondAttribute="bottom" id="KAM-SP-2Lt"/>
+                        <constraint firstItem="PBt-Sa-gBv" firstAttribute="leading" secondItem="p4d-xa-x9W" secondAttribute="leading" id="MQg-dZ-AdK"/>
+                        <constraint firstItem="PBt-Sa-gBv" firstAttribute="top" secondItem="p4d-xa-x9W" secondAttribute="top" id="VcR-ZY-7jx"/>
+                        <constraint firstItem="Qgc-xU-qNf" firstAttribute="top" secondItem="PBt-Sa-gBv" secondAttribute="bottom" constant="8" id="YLF-9J-yiO"/>
+                        <constraint firstItem="Qgc-xU-qNf" firstAttribute="leading" secondItem="p4d-xa-x9W" secondAttribute="leading" constant="80" id="nsM-bX-3Zk"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Clu-mr-Iq0">
+                    <rect key="frame" x="413" y="20" width="393" height="613"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="0lX-6e-l6H" customClass="CPTGraphHostingView">
+                            <rect key="frame" x="0.0" y="29" width="393" height="584"/>
+                        </customView>
+                        <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hWC-WP-Fah">
+                            <rect key="frame" x="8" y="-3" width="308" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="0go-Pc-60R"/>
+                            </constraints>
+                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="Q4f-Iu-QvJ">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="menu"/>
+                                <menu key="menu" id="LJ3-NU-r0i"/>
+                            </popUpButtonCell>
+                            <connections>
+                                <action selector="selectRightVariable:" target="-2" id="BkP-Rk-ekb"/>
+                            </connections>
+                        </popUpButton>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hWC-WP-Fah" secondAttribute="trailing" constant="80" id="3zM-VD-F1f"/>
+                        <constraint firstItem="hWC-WP-Fah" firstAttribute="top" secondItem="0lX-6e-l6H" secondAttribute="bottom" constant="8" id="LaX-Zc-NNW"/>
+                        <constraint firstItem="0lX-6e-l6H" firstAttribute="leading" secondItem="Clu-mr-Iq0" secondAttribute="leading" id="ROb-sp-5CB"/>
+                        <constraint firstItem="hWC-WP-Fah" firstAttribute="leading" secondItem="Clu-mr-Iq0" secondAttribute="leading" constant="10" id="RSM-ek-JvF"/>
+                        <constraint firstItem="0lX-6e-l6H" firstAttribute="top" secondItem="Clu-mr-Iq0" secondAttribute="top" id="W1L-82-aLn"/>
+                        <constraint firstAttribute="bottom" secondItem="hWC-WP-Fah" secondAttribute="bottom" id="aBt-ci-qd7"/>
+                        <constraint firstAttribute="trailing" secondItem="0lX-6e-l6H" secondAttribute="trailing" id="oc8-pC-v2t"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="p4d-xa-x9W" secondAttribute="bottom" constant="20" id="5Ny-iQ-pUh"/>
+                <constraint firstItem="p4d-xa-x9W" firstAttribute="leading" secondItem="QOH-pN-IwF" secondAttribute="leading" constant="20" id="LbQ-Bt-Dy2"/>
+                <constraint firstItem="p4d-xa-x9W" firstAttribute="width" secondItem="Clu-mr-Iq0" secondAttribute="width" id="OUj-DK-I4P"/>
+                <constraint firstAttribute="trailing" secondItem="Clu-mr-Iq0" secondAttribute="trailing" constant="20" id="Q5v-Nz-Lc5"/>
+                <constraint firstItem="p4d-xa-x9W" firstAttribute="top" secondItem="QOH-pN-IwF" secondAttribute="top" constant="20" id="ahw-Lz-r3y"/>
+                <constraint firstItem="Clu-mr-Iq0" firstAttribute="leading" secondItem="p4d-xa-x9W" secondAttribute="trailing" id="gdz-RO-ZfZ"/>
+                <constraint firstItem="Clu-mr-Iq0" firstAttribute="top" secondItem="QOH-pN-IwF" secondAttribute="top" constant="20" id="hVX-US-lvD"/>
+                <constraint firstAttribute="bottom" secondItem="Clu-mr-Iq0" secondAttribute="bottom" constant="20" id="mxl-LJ-ANm"/>
+                <constraint firstItem="Clu-mr-Iq0" firstAttribute="leading" secondItem="p4d-xa-x9W" secondAttribute="trailing" id="tif-H6-cF7"/>
+            </constraints>
+            <point key="canvasLocation" x="224" y="329.5"/>
+        </view>
+        <customObject id="nQz-wb-X5L" customClass="OVHistogramController">
+            <connections>
+                <outlet property="_leftHistogramView" destination="PBt-Sa-gBv" id="VFM-cr-wY4"/>
+                <outlet property="_leftVariableSelector" destination="Qgc-xU-qNf" id="9mY-NO-pgV"/>
+                <outlet property="_rightHistogramView" destination="0lX-6e-l6H" id="bQq-kD-c7I"/>
+                <outlet property="_rightVariableSelector" destination="hWC-WP-Fah" id="BDz-Na-UKN"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>
