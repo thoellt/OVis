@@ -61,7 +61,7 @@ Building was tested on MacOS 10.14.4. Since OVis uses MapKit you will need an ac
 OVis has some preliminary netCDF support, you will need to build netCDF libraries to build OVis. The easiest way to do this is through [homebrew](https://brew.sh). If you do not have homebrew install it by running the follwiong in a MacOS terminal.
 
 ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Once you have homebrew installed, you can build netCDF by simply running
